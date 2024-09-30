@@ -20,7 +20,6 @@ public class Sort {
 
     public static String[] bubbleSort(String[] array) {
         int rounds = 0;
-        System.out.println(Arrays.toString(array));
         while (rounds<array.length-1) {
             for (int i=0; i<array.length-1; i++) {
 
@@ -34,8 +33,6 @@ public class Sort {
             }
             rounds++;
         }
-        System.out.println(rounds);
-        System.out.println(Arrays.toString(array));
         return array;
     }
 
