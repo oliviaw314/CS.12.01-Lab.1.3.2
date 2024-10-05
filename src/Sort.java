@@ -4,21 +4,28 @@ import java.util.Arrays;
 public class Sort {
 
     public static int[] bubbleSort(int[] array) {
-       int rounds = 0;
-        while (rounds<array.length-1) {
+
+        // first type of while statement can use
+       boolean swapped = true;
+        while (swapped) {
+
+            swapped = false;
             for (int i=0; i<array.length-1; i++) {
                 if (array[i]>array[i+1]) {
                     int temp = array[i];
                     array[i] = array[i+1];
                     array[i+1] = temp;
+                    swapped = true;
                 }
             }
-            rounds++;
+
         }
         return array;
     }
 
     public static String[] bubbleSort(String[] array) {
+
+        // second type of while statement can use
         int rounds = 0;
         while (rounds<array.length-1) {
             for (int i=0; i<array.length-1; i++) {
